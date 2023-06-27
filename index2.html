@@ -49,7 +49,7 @@
                   Historia
                 </v-btn>
 
-                <v-btn color="error" href="./Proyecto Bomberos/donaciones.html" target_blank="">
+                <v-btn color="error" href="donaciones.html" target_blank="">
                   <v-icon left>volunteer_activism</v-icon> 
                   Donaciones
                 </v-btn>
@@ -74,27 +74,59 @@
       
 
         <!-- Historia-->
-<h1> </h1>
+<h1>  </h1>
 
         <!--Carrusel de fotos-->
-  <template>
-  <v-carousel cycle>
+        <template>
+          <v-conteiner>
+          <v-carousel cycle>
+            <v-carousel-item> 
+              <v-img src="./assets/c3.jpg"></v-img>
+            </v-carousel-item>
+        
+            <v-carousel-item> 
+              <v-img src="./assets/c1.jpg"></v-img>
+            </v-carousel-item>
+        
+            <v-carousel-item> 
+              <v-img src="./assets/bomb.jpg"></v-img>
+            </v-carousel-item>
+          </v-carousel>
+        </v-conteiner>
+        </template>
 
-  <v-carousel-item> 
-    <v-img src="./assets/c3.jpg"></v-img>
-  </v-carousel-item>
-
-  <v-carousel-item> 
-    <v-img src="./assets/c1.jpg"></v-img>
-  </v-carousel-item>
-
-  <v-carousel-item> 
-    <v-img src="./assets/bomb.jpg"></v-img>
-  </v-carousel-item>
-
-  </v-carousel>
-  </template>
-
+        <!--banner emergencias-->
+        <template>
+          <v-container fluid>
+            <v-row align="center" justify="center" style="height: 100%;">
+              <v-col cols="12" md="6">
+                <v-card height="124" class="banner-card" :style="{ backgroundImage: 'url(https://img.freepik.com/foto-gratis/fondo-sala-est…tilla-exhibicion-productos_1258-102141.jpg?w=2000)' }">
+                 
+                    <v-col cols="12">
+                      <v-card-text class="text-center" >
+                        <h1 class="text-center" >Emergencias: <strong>4243-2222 / 4244-2222</strong></h1>
+                    
+                      </v-card-text>
+                      <v-card-text class="text-center">
+                        <h2>Direccion: <strong>Av. Pres. Raúl Alfonsín 1039</strong></h2>
+                      </v-card-text>
+                    </v-col>
+                  </v-row>
+                </v-card>
+              </v-col>
+            
+            </v-container>
+        </template>
+        <!--fin banner emergencias-->
+        
+        <style>
+        .banner-card {
+          background-size: cover;
+          background-position: center;
+          
+        }
+        </style>
+        
   
 
 <!-- footer -->
@@ -103,7 +135,7 @@
     <v-col cols="1" align-self="center">
       <v-img src="./assets/logo.png"
       max-width="100"
-      max-height="90"> </v-img>
+      max-height="150"> </v-img>
     </v-col>
     <v-container>
       <v-layout justify-center>
@@ -138,6 +170,8 @@
           el: '#app',
           vuetify: new Vuetify(),
         })
+
+
       </script>
 
 </body>
